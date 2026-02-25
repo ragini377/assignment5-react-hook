@@ -29,5 +29,11 @@ Fetch API -:
 API Used
 https://api.escuelajs.co/api/v1/products
 
-GitHub Repository
+GitHub Repository-:
+https://github.com/ragini377/assignment5-react-hook/tree/main
+
+Live Demo -:
+https://assignment5-react-hook.netlify.app/
+
+
 
