@@ -4,7 +4,7 @@ A custom hook named useFetch is created.
 
 The hook accepts a URL parameter.
 
-It fetches data from an API using the fetch() function.
+It fetches data from an API using the useEffect() function.
 
 It handles -:
 
@@ -18,15 +18,16 @@ A simple React component displays the fetched data.
 
 Tech Used -:
 
-React (Vite)
+1. React (Vite)
 
-JavaScript (ES6)
+2.JavaScript (ES6)
 
-CSS
+3.Tailwind css
 
 Fetch API -:
 
 API Used
 https://api.escuelajs.co/api/v1/products
 
+GitHub Repository
 
