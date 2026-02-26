@@ -13,7 +13,7 @@ function Products() {
   if (error) {
     return (
       <h2 className="text-center mt-10 text-red-500 text-xl">
-        ⚠️ {error}
+        {error}
       </h2>
     );
   }
