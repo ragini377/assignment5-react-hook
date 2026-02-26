@@ -1,13 +1,21 @@
 import React from "react";
-import useFetch from  "./useFetch";
+import useFetch from "./useFetch";
 
 function Products() {
-  const { data, loading } = useFetch(
+  const { data, loading, error } = useFetch(
     "https://api.escuelajs.co/api/v1/products"
   );
 
   if (loading) {
     return <h2 className="text-center mt-10 text-xl">Loading...</h2>;
+  }
+
+  if (error) {
+    return (
+      <h2 className="text-center mt-10 text-red-500 text-xl">
+        ⚠️ {error}
+      </h2>
+    );
   }
 
   return (
@@ -23,7 +31,7 @@ function Products() {
             className="bg-gray-800 p-4 rounded-lg shadow-lg"
           >
             <img
-              src={item.images[0]}
+              src={item.images?.[0]}
               alt={item.title}
               className="h-40 w-full object-cover rounded-md"
             />
